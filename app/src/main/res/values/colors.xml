@@ -3,4 +3,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="blue">#003AA9 </color>
+    <color name="normal_blue">#003AA9 </color>
+    <color name="darker_blue">#17286E </color>
+    <color name="darkest_blue">#151837 </color>
+    <color name="normal_red">#FF0000</color>
+    <color name="darker_red">#C1121F </color>
 </resources>

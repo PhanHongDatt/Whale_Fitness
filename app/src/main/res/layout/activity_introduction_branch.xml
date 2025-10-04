@@ -1,10 +1,93 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".introduction_branch">
+    android:background="@drawable/img_introduction_branch"
+    tools:context=".MainActivity">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            tools:context=".MainActivity">
+
+            <ImageView
+                android:id="@+id/img_full_size_logo"
+                android:layout_width="300dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="170dp"
+                android:layout_marginLeft="@dimen/margin_basex5"
+                android:scaleType="fitXY"
+                android:src="@drawable/lg_fullsize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/introduction_tv_paradise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_basex4"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/lora"
+                android:gravity="center"
+                android:text="Over 200 branch around VietNam"
+                android:textColor="@android:color/white"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img_full_size_logo" />
+
+            <TextView
+                android:id="@+id/introduction_tv_sub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_base"
+                android:fontFamily="@font/montserrat_italic"
+                android:gravity="center"
+                android:text="@string/journey"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_medium"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/introduction_tv_paradise" />
+
+            <ImageView
+                android:id="@+id/img_status"
+                android:layout_width="63dp"
+                android:layout_height="6dp"
+                android:layout_marginTop="@dimen/margin_basex40"
+                android:src="@drawable/img_status_page1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/introduction_tv_sub" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/startButton"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="250dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_basex5"
+                android:background="@drawable/red_stroke_frame"
+                android:fontFamily="@font/lora"
+                android:text="@string/btn_next"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img_status"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

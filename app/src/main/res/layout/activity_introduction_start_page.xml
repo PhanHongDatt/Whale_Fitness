@@ -5,6 +5,63 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".introduction_start_page">
+    tools:context=".introduction_start_page"
+    android:background="@drawable/img_start_page">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="24dp">
+
+            <ImageView
+                android:id="@+id/img_full_size_logo"
+                android:layout_width="300dp"
+                android:layout_height="160dp"
+                android:layout_marginBottom="40dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/lg_fullsize" />
+
+            <TextView
+                android:id="@+id/introduction_tv_paradise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lora"
+                android:gravity="center"
+                android:text="Build Your Workout Paradise"
+                android:textColor="@android:color/white"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/introduction_tv_sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_italic"
+                android:text="Your Journey Begins Here"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginBottom="100dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/startButton"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="250dp"
+                android:layout_height="55dp"
+                android:text="Get Started"
+                android:fontFamily="@font/lora"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="24dp"
+                android:layout_gravity="center"
+                android:background="@drawable/red_stroke_frame"/>
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

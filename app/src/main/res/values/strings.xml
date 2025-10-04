@@ -1,3 +1,49 @@
 <resources>
+    <!-- First Using App-->
     <string name="app_name">Whale Fitness</string>
+    <string name="journey">Your Journey Begins Here</string>
+    <!-- Login & Register function  -->
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign in</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+
+    <!-- Customer Information -->
+
+    <!-- Common buttons -->
+    <string name="btn_back">BACK</string>
+    <string name="btn_next">NEXT</string>
+
+    <string name="subtitle_intro">Tell us about yourself</string>
+
+    <!-- Screen 1: Choose Gender -->
+    <string name="choose_gender_title">Choose your gender</string>
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+
+    <!-- Screen 2: Choose Age -->
+    <string name="choose_age_title">Choose your age</string>
+
+    <!-- Screen 3: Choose Weight & Height -->
+    <string name="choose_weight_height_title">Your Weight and Height</string>
+    <string name="weight_label">Weight</string>
+    <string name="height_label">Height</string>
+    <string name="bmi_label">Your BMI</string>
+    <string name="unit_kg">kg</string>
+    <string name="unit_cm">cm</string>
+
+    <!-- Screen 4: Goal -->
+    <string name="goal_title">What is your goal?</string>
+    <string name="goal_lose_weight">Lose weight</string>
+    <string name="goal_get_fitter">Get fitter</string>
+    <string name="goal_flexible">Gain more flexible</string>
+
+    <!-- Screen 5: Activity Level -->
+    <string name="activity_title">What is your level?</string>
+    <string name="activity_beginner">Beginner</string>
+    <string name="activity_intermediate">Intermediate</string>
+    <string name="activity_advance">Advance</string>
+
 </resources>
