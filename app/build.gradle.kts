@@ -1,3 +1,13 @@
+import java.util.Properties
+
+// Create a properties object
+val properties = Properties()
+// Load local.properties file
+val localPropertiesFile = rootProject.file("local.properties")
+if (localPropertiesFile.exists()) {
+    properties.load(localPropertiesFile.inputStream())
+}
+
 plugins {
     alias(libs.plugins.android.application)
     // Add the Google services Gradle plugin
@@ -16,6 +26,10 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        // Read the API key from local.properties and add it as a string resource
+        val firebaseApiKey = properties.getProperty("FIREBASE_API_KEY") ?: ""
+        resValue("string", "google_api_key", firebaseApiKey)
     }
 
     buildTypes {
