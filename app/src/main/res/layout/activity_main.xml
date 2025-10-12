@@ -28,9 +28,9 @@
                 android:layout_width="300dp"
                 android:layout_height="160dp"
                 android:layout_marginTop="170dp"
-                android:layout_marginLeft="@dimen/margin_basex5"
+                android:layout_marginLeft="40dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/lg_fullsize"
+                android:src="@drawable/lg_fullsize_svg"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
