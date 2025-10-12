@@ -9,12 +9,14 @@
     <string name="sign_in">Sign in</string>
     <string name="register">Register</string>
     <string name="login">Login</string>
-
-    <!-- Customer Information -->
-
+    <string name="ForgotPassword">Forgot Password?</string>
+    <!-- Hint -->
+    <string name="hintname">Alexa Mama</string>
+    <string name="hintemail">AlexaMama@gmail.com</string>
+    <string name="hintpassword">********</string>
     <!-- Common buttons -->
     <string name="btn_back">BACK</string>
-    <string name="btn_next">NEXT</string>
+    <string name="btn_next">Next</string>
 
     <string name="subtitle_intro">Tell us about yourself</string>
 
