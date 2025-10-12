@@ -1,4 +1,4 @@
-package com.example.whalefitness;
+package com.group8.whalefitness;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;

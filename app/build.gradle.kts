@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.whalefitness"
+    namespace = "com.group8.whalefitness"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.whalefitness"
+        applicationId = "com.group8.whalefitness"
         minSdk = 26
         targetSdk = 36
         versionCode = 1
