@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/img_background_blue_red">
+    <TextView
+        android:id="@+id/tvTUAY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tell us about yourself"
+        android:textSize="32sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/lora"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="100dp"/>
+    <TextView
+        android:id="@+id/tvAGE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose your age"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/lora"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tvTUAY"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="5dp"/>
+    <!-- Nút chọn Nam (Male) -->
+    <LinearLayout
+        android:id="@+id/btnMale"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/bg_gender_button_circle"
+        app:layout_constraintTop_toBottomOf="@id/tvAGE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/symbols_male"
+            app:tint="@color/white" />
+    </LinearLayout>
+
+    <!-- Nút chọn Nữ (Female) -->
+    <LinearLayout
+        android:id="@+id/btnFemale"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/bg_gender_button_circle"
+        app:layout_constraintTop_toBottomOf="@id/btnMale"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/symbols_female"
+            app:tint="@color/white" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
