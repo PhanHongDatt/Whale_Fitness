@@ -1,6 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/img_background_blue_red">
 
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/intro_tellusaboutyourself"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:fontFamily="@font/lora"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_chooseage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_your_age"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:fontFamily="@font/lora"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title">
+    </TextView>
+
+    <com.shawnlin.numberpicker.NumberPicker
+        android:id="@+id/age_NumberPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        app:np_min="10"
+        app:np_max="100"
+        app:np_value="36"
+        app:np_wheelItemCount="5"
+        app:np_textColor="@color/white"
+        app:np_selectedTextColor="@color/white"
+        app:np_selectedTextSize="36sp"
+        app:np_textSize="28sp"
+        app:np_dividerColor="@color/darker_red"
+        app:np_dividerThickness="1dp"
+        app:np_dividerDistance="40dp"
+        app:np_wrapSelectorWheel="true"
+        app:np_fadingEdgeEnabled="true"
+        app:np_fadingEdgeStrength="0.6"
+        app:np_scrollerEnabled="true"
+        app:np_textAlign="textAlignCenter"
+        app:np_selectedTextAlign="selectedTextAlignCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_chooseage"
+        android:layout_marginTop="40dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="124dp"
+        android:background="@drawable/img_btn_back"
+        android:fontFamily="@font/lora"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/age_NumberPicker"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/img_btn_next"
+        android:fontFamily="@font/lora"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.866"
+        app:layout_constraintStart_toEndOf="@id/btn_back"
+        app:layout_constraintTop_toBottomOf="@id/age_NumberPicker"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    </androidx.appcompat.widget.AppCompatButton>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -52,7 +52,10 @@
     <string name="email_example"><![CDATA[<ex***********ple@gmail.com>]]></string>
     <string name="changeemail">Change email.</string>
     <string name="messageOTP">The OTP will be expired in 60s.</string>
-    <string name="resendOTP">Didn't receive the code? Resend.</string>
+    <string name="resendOTP">Didn\'t receive the code? Resend.</string>
     <string name="verify">Verify</string>
+    <string name="intro_tellusaboutyourself">Tell us about yourself\n</string>
+    <string name="choose_your_gender">Choose your gender</string>
+    <string name="choose_your_age">Choose your age</string>
 
 </resources>
