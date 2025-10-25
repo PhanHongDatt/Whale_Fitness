@@ -47,5 +47,12 @@
     <string name="activity_beginner">Beginner</string>
     <string name="activity_intermediate">Intermediate</string>
     <string name="activity_advance">Advance</string>
+    <string name="VerifyEmail">Verify Your Email</string>
+    <string name="Verify_Description">A 4-digit code has been sent to your email.</string>
+    <string name="email_example"><![CDATA[<ex***********ple@gmail.com>]]></string>
+    <string name="changeemail">Change email.</string>
+    <string name="messageOTP">The OTP will be expired in 60s.</string>
+    <string name="resendOTP">Didn't receive the code? Resend.</string>
+    <string name="verify">Verify</string>
 
 </resources>
